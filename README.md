@@ -4,10 +4,10 @@
 - GCP
 
 ## Set up VM via GCP
-### 1. Select "Create a VM" on the homepage of GCP
-### 2. Name the vm
-### 3. Under "Machine type", select "e2-medium (2 vCPU, 4 GB memory)" to meet the minimun requirement of mysql
-### 4. Under "Boot disk", select "change"
+    1. Select "Create a VM" on the homepage of GCP
+    2. Name the vm
+    3. Under "Machine type", select "e2-medium (2 vCPU, 4 GB memory)" to meet the minimun requirement of mysql
+    4. Under "Boot disk", select "change"
     - Under "Operating system", select "Ubuntu"
     - Under "Version", select "Ubuntu 18.04 LTS x86/64, amd64 bionic image built on 2022-09-01, supports Shielded VM features"
     - Click "select"
