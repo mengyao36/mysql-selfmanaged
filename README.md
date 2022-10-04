@@ -19,15 +19,15 @@
 
 ## Make mysql instance available to external computers
 1. Config file
-  - In GCP vm terminal, use "nano" to access config file
-  - Once in the config file, find the port address and change it into "0.0.0.0"
-  - Press ctrl + o to save, ctrl + x to exit config file
+    - In GCP vm terminal, use "nano" to access config file
+    - Once in the config file, find the port address and change it into "0.0.0.0"
+    - Press ctrl + o to save, ctrl + x to exit config file
 2. Opening ports via GCP
-  - In search bar type "firewall"
-  - Click "create firewall rule"
-  - Give the firewall rule a name as required
-  - Under "Targets", select "All instances in the network"
-  - Under "Source IPv4 ranges", type "0.0.0.0/0"
-  - Create firewall rule
+    - In search bar type "firewall"
+    - Click "create firewall rule"
+    - Give the firewall rule a name as required
+    - Under "Targets", select "All instances in the network"
+    - Under "Source IPv4 ranges", type "0.0.0.0/0"
+    - Create firewall rule
 
 ## Uplode example dataset to mysql database
