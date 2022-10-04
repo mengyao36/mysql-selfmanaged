@@ -3,6 +3,7 @@
 # run above line in terminal
 # Successfully installed pymysql-1.0.2
 # pip install python-decouple
+# pip3 install Flask-SQLAlchemy
 
 # import needed paclages
 from sqlalchemy import create_engine
@@ -10,7 +11,8 @@ import pandas as pd
 import os
 from decouple import config
 
-MYSQL_HOSTNAME = '104.154.243.115' # get this from GCP created vm
+MYSQL_HOSTNAME = '104.154.243.115' 
+# get this from GCP created vm
 
 MYSQL_USER = config('USER')
 
@@ -19,10 +21,8 @@ MYSQL_PASSWORD = config('KEY')
 MYSQL_DATABASE = 'hmy'
 
 connection_string = f'mysql+pymysql://{MYSQL_USER}:{MYSQL_PASSWORD}@{MYSQL_HOSTNAME}/{MYSQL_DATABASE}'
-connection_string
 
 db = create_engine(connection_string)
-db
 
 # need to use GCP terminal (vm) to create a database, then a table with some columns first, finally run the commands below
 # get data from mysql
@@ -40,7 +40,7 @@ df
 ####################################################################
 # find some data from one git repo use the link for raw data display
 # load dataset called "small.csv" *
-real_df = pd.read_csv('https://raw.githubusercontent.com/mengyao36/mysql-selfmanaged/main/Data/small.csv?token=GHSAT0AAAAAABZRHOPHLA4S3AJWCQNHAGVSYZ4NFJQ')
+real_df = pd.read_csv('https://raw.githubusercontent.com/mengyao36/mysql-selfmanaged/main/Data/small.csv?token=GHSAT0AAAAAABZRHOPH27JJQGQMFUZLSYF6YZ42LNA')
 real_df
 # Output as below: 
 #     ID  Age  Gender  Health
