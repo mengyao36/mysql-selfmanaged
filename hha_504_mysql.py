@@ -9,8 +9,8 @@ import pandas as pd
 import os
 from decouple import config
 
+# get info from GCP created vm
 MYSQL_HOSTNAME = config('HOST')
-# get this from GCP created vm
 
 MYSQL_USER = config('USER')
 
