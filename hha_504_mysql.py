@@ -11,14 +11,14 @@ import pandas as pd
 import os
 from decouple import config
 
-MYSQL_HOSTNAME = '104.154.243.115' 
+MYSQL_HOSTNAME = config('HOST')
 # get this from GCP created vm
 
 MYSQL_USER = config('USER')
 
 MYSQL_PASSWORD = config('KEY')
 
-MYSQL_DATABASE = 'hmy'
+MYSQL_DATABASE = config('DATABASE')
 
 connection_string = f'mysql+pymysql://{MYSQL_USER}:{MYSQL_PASSWORD}@{MYSQL_HOSTNAME}/{MYSQL_DATABASE}'
 
