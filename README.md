@@ -15,8 +15,13 @@
 6. Click "create" at the bottom to create vm
  
 ## Set up OS image
-
-
+1. Update OS command
+    - sudo apt-get update
+2. Install mysql command
+    - sudo apt install mysql-server mysql-client
+3. Login to mysql command 
+    - sudo mysql
+    - 
 ## Make mysql instance available to external computers
 1. Config file
     - In GCP vm terminal, use "nano" to access config file
