@@ -44,3 +44,5 @@
 
 ## Uplode example dataset to mysql database
 Following commmands used in python file
+Screenshot added to show dataset uploded successfully
+    - Under database called "hmy", a new table added called "new_table"
