@@ -27,10 +27,10 @@
     - In GCP vm terminal, use "nano" to access config file
         - sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
     - Once enter the config file, find the "bind-address" and change it into "0.0.0.0"
-    - Press `ctrl + o' to save, `ctrl + x' to exit config file
+    - Press "ctrl + o" to save, "ctrl + x" to exit config file
     - restart mysql (the two commands below work the same, use either)
-        - sudo nano service mysql restart
-        - sudo /etc/init.d/myql restart
+        - `sudo nano service mysql restart'
+        - `sudo /etc/init.d/myql restart'
 2. Opening ports via GCP (enable inbound connection)
     - In search bar type "firewall"
     - Click "create firewall rule"
