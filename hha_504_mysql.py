@@ -1,7 +1,5 @@
 # sudo apt-get install python3-dev default-libmysqlclient-dev
-# pip install pymysql 
-# run above line in terminal
-# Successfully installed pymysql-1.0.2
+# pip install pymysql # Successfully installed pymysql-1.0.2
 # pip install python-decouple
 # pip3 install Flask-SQLAlchemy
 
