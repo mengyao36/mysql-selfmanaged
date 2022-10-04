@@ -2,17 +2,19 @@
 # pip install pymysql 
 # run above line in terminal
 # Successfully installed pymysql-1.0.2
+# pip install python-decouple
 
 # import needed paclages
 from sqlalchemy import create_engine
 import pandas as pd
 import os
+from decouple import config
 
 MYSQL_HOSTNAME = '104.154.243.115' # get this from GCP created vm
 
-MYSQL_USER = 'delete_for_safety_concern'
+MYSQL_USER = config('USER')
 
-MYSQL_PASSWORD = 'delete_for_safety_concern'
+MYSQL_PASSWORD = config('KEY')
 
 MYSQL_DATABASE = 'hmy'
 
