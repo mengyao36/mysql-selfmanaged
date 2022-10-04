@@ -16,23 +16,31 @@
  
 ## Set up OS image
 1. Update OS command
-    - sudo apt-get update
+    - `sudo apt-get update`
 2. Install mysql command
-    - sudo apt install mysql-server mysql-client
+    - `sudo apt install mysql-server mysql-client`
 3. Login to mysql command 
-    - sudo mysql
+    - `sudo mysql`
 
 ## Make mysql instance available to external computers
-1. Config file
+1. Config file (allow inbound connection to mysql)
     - In GCP vm terminal, use "nano" to access config file
-    - Once in the config file, find the port address and change it into "0.0.0.0"
-    - Press ctrl + o to save, ctrl + x to exit config file
-2. Opening ports via GCP
-    - In search bar type "firewall"
-    - Click "create firewall rule"
+        - `sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf`
+    - Once enter the config file, find the "bind-address" and change it into "0.0.0.0"
+    - Press "ctrl + o" to save, "ctrl + x" to exit config file
+    - restart mysql (the two commands below work the same, use either)
+        - `sudo nano service mysql restart`
+        - `sudo /etc/init.d/myql restart`
+2. Opening ports via GCP (enable inbound connection)
+    - In the searching bar, type "firewall"
+    - Select "create firewall rule" (associated with our created vm)
     - Give the firewall rule a name as required
-    - Under "Targets", select "All instances in the network"
-    - Under "Source IPv4 ranges", type "0.0.0.0/0"
+    - Under "Protocols and ports", select "Specified protocols and ports", then select "TCP", type "3306" under "Ports"
+    - Under "Direction of traffic", select "Ingress"
+    - Under "Action on match", select "Allow", then
+        - Under "Targets", select "All instances in the network"
+        - Under "Source IPv4 ranges", type "0.0.0.0/0"
     - Create firewall rule
 
 ## Uplode example dataset to mysql database
+Following commmands used in python file
