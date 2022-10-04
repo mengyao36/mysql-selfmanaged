@@ -38,7 +38,7 @@ df
 ####################################################################
 # find some data from one git repo use the link for raw data display
 # load dataset called "small.csv" *
-real_df = pd.read_csv('https://raw.githubusercontent.com/mengyao36/mysql-selfmanaged/main/Data/small.csv?token=GHSAT0AAAAAABZRHOPH27JJQGQMFUZLSYF6YZ42LNA')
+real_df = pd.read_csv('https://raw.githubusercontent.com/mengyao36/mysql-selfmanaged/main/Data/small.csv')
 real_df
 # Output as below: 
 #     ID  Age  Gender  Health
