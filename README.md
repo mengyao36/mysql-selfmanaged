@@ -43,3 +43,4 @@
     - Create firewall rule
 
 ## Uplode example dataset to mysql database
+Following commmands used in python file
