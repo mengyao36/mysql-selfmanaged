@@ -32,11 +32,14 @@
         - `sudo nano service mysql restart`
         - `sudo /etc/init.d/myql restart`
 2. Opening ports via GCP (enable inbound connection)
-    - In search bar type "firewall"
-    - Click "create firewall rule"
+    - In the searching bar, type "firewall"
+    - Select "create firewall rule" (associated with our created vm)
     - Give the firewall rule a name as required
-    - Under "Targets", select "All instances in the network"
-    - Under "Source IPv4 ranges", type "0.0.0.0/0"
+    - Under "Protocols and ports", select "Specified protocols and ports", the select "TCP", type "3306" under "Ports"
+    - Under "Direction of traffic", select "Ingress"
+    - Under "Action on match", select "Allow", then
+        - Under "Targets", select "All instances in the network"
+        - Under "Source IPv4 ranges", type "0.0.0.0/0"
     - Create firewall rule
 
 ## Uplode example dataset to mysql database
