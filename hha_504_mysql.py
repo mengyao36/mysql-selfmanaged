@@ -1,11 +1,12 @@
- # sudo apt-get install python3-dev default-libmysqlclient-dev
-
-pip install pymysql # run this line in terminal
+# sudo apt-get install python3-dev default-libmysqlclient-dev
+# pip install pymysql 
+# run above line in terminal
 # Successfully installed pymysql-1.0.2
 
 # import needed paclages
 from sqlalchemy import create_engine
 import pandas as pd
+import os
 
 MYSQL_HOSTNAME = '104.154.243.115' # get this from GCP created vm
 
