@@ -8,9 +8,9 @@
 2. Name the vm
 3. Under "Machine type", select "e2-medium (2 vCPU, 4 GB memory)" to meet the minimun requirement of mysql
 4. Under "Boot disk", select "change"
-  4.1 Under "Operating system", select "Ubuntu"
-  4.2 Under "Version", select "Ubuntu 18.04 LTS x86/64, amd64 bionic image built on 2022-09-01, supports Shielded VM features"
-  4.3 Click "select"
+  -4.1 Under "Operating system", select "Ubuntu"
+  -4.2 Under "Version", select "Ubuntu 18.04 LTS x86/64, amd64 bionic image built on 2022-09-01, supports Shielded VM features"
+  -4.3 Click "select"
 5. Under "Firewall", check both "Allow HTTP traffic" and "Allow HTTPS traffic"
 6. Click "create" at the bottom to create vm
  
